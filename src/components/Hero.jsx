@@ -92,7 +92,7 @@ export default function Hero() {
           {/* Imagen de ejemplo */}
           <div className="w-72 h-96 bg-gray-700 rounded-2xl overflow-hidden">
             <Image
-              src="/imagen-ejemplo.jpg"
+              src="/images/Diseño3D/FtPortada.png"
               alt="Imagen de ejemplo"
               width={300}
               height={400}
