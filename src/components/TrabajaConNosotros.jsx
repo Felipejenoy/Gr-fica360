@@ -1,4 +1,6 @@
+'use client';
 import React from 'react';
+import Image from 'next/image';
 
 export default function TrabajaConNosotros() {
   return (
@@ -6,13 +8,19 @@ export default function TrabajaConNosotros() {
       id="trabajaConNosotros"
       className="bg-[#0c1b3a] text-white py-16 px-6 flex flex-col md:flex-row justify-center items-center md:space-x-10 space-y-8 md:space-y-0"
     >
-      {/* Imagen / tarjeta de fotografía */}
-      <div className="bg-white text-[#0c1b3a] font-bold text-2xl md:text-3xl w-64 h-72 flex items-center justify-center rounded-2xl shadow-lg">
-        FOTOGRAFÍA
+      {/* Imagen lateral */}
+      <div className="relative w-80 h-96 rounded-2xl shadow-lg overflow-hidden">
+      <Image
+      src="/images/Fotografía/Ft portada2.jpg"
+      alt="Fotografía"
+      fill
+      className="object-cover"
+      />
+       
       </div>
 
       {/* Texto principal */}
-      <div className="max-w-lg">
+      <div className="max-w-lg text-center md:text-left">
         <h2 className="text-2xl md:text-3xl font-bold mb-4">
           “Haz crecer tu talento, mientras hacemos crecer las marcas.”
         </h2>
@@ -26,7 +34,7 @@ export default function TrabajaConNosotros() {
         </p>
 
         {/* Redes sociales */}
-        <div className="flex space-x-4 mt-6">
+        <div className="flex justify-center md:justify-start space-x-4 mt-6">
           <a href="#" aria-label="Facebook" className="hover:opacity-75 transition">
             <i className="fab fa-facebook-f text-2xl"></i>
           </a>

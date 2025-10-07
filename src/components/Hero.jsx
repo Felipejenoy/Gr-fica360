@@ -90,15 +90,16 @@ export default function Hero() {
           </ul>
 
           {/* Imagen de ejemplo */}
-          <div className="w-72 h-96 bg-gray-700 rounded-2xl overflow-hidden">
-            <Image
-              src="/images/Diseño3D/FtPortada.png"
-              alt="Imagen de ejemplo"
-              width={300}
-              height={400}
-              className="object-cover w-full h-full"
-            />
-          </div>
+         <div className="w-[400px] h-[400px] bg-gray-700 rounded-2xl overflow-hidden">
+       <Image
+        src="/images/Diseño3D/FtPortada.png"
+        alt="Imagen de ejemplo"
+       width={2048}
+        height={2048}
+       className="object-cover w-full h-full"
+       />
+       </div>
+
         </motion.div>
       </div>
     </section>
