@@ -1,6 +1,7 @@
 'use client';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
+import Link from "next/link";
 
 export default function Hero() {
 
@@ -49,9 +50,11 @@ export default function Hero() {
           </ul>
         </div>
         <div className="flex gap-4">
-    <button className="bg-white text-[#0A0F2C] font-semibold px-6 py-2 rounded-full hover:bg-gray-200">
-      Registrarse
-    </button>
+   <Link href="/register" passHref>
+  <button className="bg-white text-[#0A0F2C] font-semibold px-6 py-2 rounded-full hover:bg-gray-200">
+    Registrarse
+  </button>
+</Link>
     <button className="bg-white text-[#0A0F2C] font-semibold px-6 py-2 rounded-full hover:bg-gray-200">
       Iniciar sesión
     </button>
