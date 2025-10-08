@@ -12,9 +12,9 @@ export default function Catalogos() {
 
   return (
     <section
-      id="catalogos"
-      className="py-20 bg-gradient-to-b from-[#0A0F2C] to-[#111A4D] text-white"
-    >
+  id="catalogos"
+  className="py-20 bg-gradient-to-b from-[#0A0F2C] to-[#0c1b3a] text-white"
+>
       <div className="container mx-auto px-6 text-center">
         <motion.h2
           initial={{ opacity: 0, y: -20 }}

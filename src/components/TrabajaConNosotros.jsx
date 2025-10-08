@@ -5,9 +5,9 @@ import Image from 'next/image';
 export default function TrabajaConNosotros() {
   return (
     <section
-      id="trabajaConNosotros"
-      className="bg-[#0c1b3a] text-white py-16 px-6 flex flex-col md:flex-row justify-center items-center md:space-x-10 space-y-8 md:space-y-0"
-    >
+  id="trabajaConNosotros"
+  className="bg-[#0c1b3a] text-white py-16 px-6 flex flex-col md:flex-row justify-center items-center md:space-x-10 space-y-8 md:space-y-0"
+>
       {/* Imagen lateral */}
       <div className="relative w-80 h-96 rounded-2xl shadow-lg overflow-hidden">
       <Image

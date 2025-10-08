@@ -114,7 +114,7 @@ export default function RegisterPage() {
             type="submit"
             className="mt-8 bg-blue-600 hover:bg-blue-500 text-white py-3 rounded-lg font-semibold transition"
           >
-            Enviar registro
+            Registrarse
           </button>
 
           {/* Texto legal */}
