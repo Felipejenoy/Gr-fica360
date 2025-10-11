@@ -19,6 +19,7 @@ export default function LoginPage() {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Datos de inicio de sesión:", formData);
+    router.push("/dashboard");
   };
 
   return (
