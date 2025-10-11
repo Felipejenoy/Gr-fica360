@@ -7,7 +7,7 @@ import Hero from "../components/Hero";
 import Catalogos from "../components/Catalogos";
 import TrabajaConNosotros from "@/components/TrabajaConNosotros";
 import CookiesBanner from "@/components/CookiesBanner";
-
+import Footer from "@/components/Footer";
 export default function Home() {
   const scrollToCatalogos = () => {
     const section = document.getElementById("catalogos");
@@ -23,6 +23,7 @@ export default function Home() {
       <Catalogos />
       <TrabajaConNosotros/>
       <CookiesBanner/>
+      <Footer/>
     </main>
   );
 }

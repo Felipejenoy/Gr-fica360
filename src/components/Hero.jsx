@@ -55,9 +55,11 @@ export default function Hero() {
     Registrarse
   </button>
 </Link>
-    <button className="bg-white text-[#0A0F2C] font-semibold px-6 py-2 rounded-full hover:bg-gray-200">
+    <Link href="/login" passHref>
+     <button className="bg-white text-[#0A0F2C] font-semibold px-6 py-2 rounded-full hover:bg-gray-200">
       Iniciar sesión
     </button>
+    </Link>
   </div>
       </nav>
 

@@ -13,7 +13,7 @@ export default function Catalogos() {
   return (
     <section
   id="catalogos"
-  className="py-20 bg-gradient-to-b from-[#0A0F2C] to-[#0c1b3a] text-white"
+  className="py-40 bg-gradient-to-b from-[#0A0F2C] to-[#0c1b3a] text-white"
 >
       <div className="container mx-auto px-6 text-center">
         <motion.h2
@@ -21,7 +21,7 @@ export default function Catalogos() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           className="text-3xl md:text-4xl font-bold mb-12"
-        >
+        > 
           Catálogos
         </motion.h2>
 
@@ -35,7 +35,7 @@ export default function Catalogos() {
               whileHover={{ scale: 1.05 }}
               className="flex flex-col items-center"
             >
-              <div className="w-56 h-36 rounded-lg mb-4 shadow-md overflow-hidden relative">
+              <div className="w-66 h-46 rounded-lg mb-4 shadow-md overflow-hidden relative">
                 <Image
                   src={item.imagen}
                   alt={item.titulo}

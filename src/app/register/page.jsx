@@ -92,7 +92,7 @@ export default function RegisterPage() {
     />
     <input
       type="text"
-      placeholder="Lugar de residencia (ej: Popayán)"
+      placeholder="Dirección(ej: Popayán)"
       className="bg-[#1B245A] p-3 rounded-lg placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-blue-500"
     />
     <input
