@@ -37,7 +37,7 @@ export default function Footer() {
         {/* Redes sociales */}
         <div className="flex gap-6 self-center md:self-start">
           <a
-            href="#"
+            href="https://www.facebook.com/share/177vBzab84/"
             className="bg-white text-[#0A0F2C] w-9 h-9 flex items-center justify-center rounded-full hover:bg-gray-200 transition"
             aria-label="Facebook"
           >
