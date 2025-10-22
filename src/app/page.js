@@ -1,6 +1,6 @@
 // src/app/page.js
 "use client";
-
+import { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
 
@@ -9,6 +9,13 @@ import TrabajaConNosotros from "@/components/TrabajaConNosotros";
 import CookiesBanner from "@/components/CookiesBanner";
 import Footer from "@/components/Footer";
 export default function Home() {
+    // 🔄 Redirección automática si llega con #access_token
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash.includes("access_token")) {
+      window.location.href = "/confirmacion" + hash;
+    }
+  }, []);
   const scrollToCatalogos = () => {
     const section = document.getElementById("catalogos");
     if (section) {
