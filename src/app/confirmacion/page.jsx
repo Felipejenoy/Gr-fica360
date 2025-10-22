@@ -1,44 +1,42 @@
 "use client";
-import { useEffect } from "react";
 import { motion } from "framer-motion";
-import { useRouter } from "next/navigation";
+import { useEffect } from "react";
 
 export default function ConfirmacionPage() {
-  const router = useRouter();
-
   useEffect(() => {
     const timer = setTimeout(() => {
-      router.push("https://forms.gle/VPoYxZ8dvQEmPVe97");
-    }, 4000); // 4 segundos antes de redirigir
+      window.location.href = "https://forms.gle/VPoYxZ8dvQEmPVe97";
+    }, 4000); // ⏱️ Redirige a los 4 segundos
     return () => clearTimeout(timer);
-  }, [router]);
- // 
+  }, []);
+
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center bg-[#0A0F2C] text-white px-6 text-center">
-      <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        className="bg-[#11183D] p-10 rounded-2xl shadow-lg max-w-md"
-      >
-        <h1 className="text-3xl font-bold mb-4 text-[#3b82f6]">
-          ✅ Correo confirmado
+    <section className="min-h-screen flex flex-col items-center justify-center bg-[#0A0F2C] text-white text-center px-6">
+      <div className="max-w-md bg-[#11183D] p-10 rounded-2xl shadow-xl border border-[#1B245A]">
+        <h1 className="text-3xl font-bold mb-3 bg-gradient-to-r from-blue-400 to-blue-600 text-transparent bg-clip-text">
+          ¡Correo confirmado! ✅
         </h1>
         <p className="text-gray-300 mb-4">
-          Tu correo ha sido verificado correctamente.
-        </p>
-        <p className="text-gray-400 text-sm mb-6">
-          Ahora realizaremos una pequeña encuesta para conocer tus intereses.
+          Gracias por verificar tu cuenta en <strong>GRÁFICA 360</strong>.
         </p>
 
         <motion.div
           animate={{ opacity: [0.5, 1, 0.5] }}
           transition={{ repeat: Infinity, duration: 1.5 }}
-          className="text-sm text-gray-500"
+          className="text-sm text-gray-400"
         >
-          Redirigiendo...
+          Vamos a realizarte una pequeña encuesta para conocer tus intereses...
         </motion.div>
-      </motion.div>
+
+        <motion.div
+          animate={{ scale: [1, 1.05, 1] }}
+          transition={{ repeat: Infinity, duration: 1.2 }}
+          className="mt-6"
+        >
+          <span className="text-blue-400 font-medium">Redirigiendo al formulario</span>
+          <span className="text-blue-500"> ⟳</span>
+        </motion.div>
+      </div>
     </section>
   );
 }
