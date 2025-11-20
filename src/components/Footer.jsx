@@ -42,6 +42,7 @@ export default function Footer() {
             aria-label="Facebook"
           >
             <FaFacebookF size={18} />
+            //se va
           </a>
           <a
             href="#"
